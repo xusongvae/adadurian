@@ -1,30 +1,30 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Improving LPCNet-based Text-to-Speech with Linear Prediction-structured Mixture Density Network
+    <title>AdaDurIAN: Few-shot Adaptation for Neural Text-to-Speech with DurIAN
 	</title>
 </head>
 <body>
 
 <article>
     <header>
-        <h1>Improving LPCNet-based Text-to-Speech with Linear Prediction-structured Mixture Density Network</h1>
+        <h1>AdaDurIAN: Few-shot Adaptation for Neural Text-to-Speech with DurIAN</h1>
     </header>
 </article>
 <hr>
 
 <div><h3><b>Paper</b> </h3>
-<div> <blockquote> Accepted to ICASSP 2020 [<a href="https://arxiv.org/abs/2001.11686">Here</a>]</blockquote> </div>
+<div> <blockquote> Submitted to InterSpeech 2020 [<a href="https://arxiv.org/abs/2005.05642">Here</a>]</blockquote> </div>
 <div><h3><b>Authors</b> </h3>
-<blockquote> <div>Min-Jae Hwang, Eunwoo Song, Ryuichi Yamamoto, Frank Soong and Hong-Goo Kang</div> </blockquote> 
+<blockquote> <div>Zewang Zhang, Qiao Tian, Heng Lu, Ling-Hui Chen, Shan Liu</div> </blockquote> 
 <div><h3><b>Abstract</b> </h3>
 <blockquote> 
-<div> In this paper, we propose an improved LPCNet vocoder using a linear prediction (LP)-structured mixture density network (MDN). </div>
-<div> The recently proposed LPCNet vocoder has successfully achieved high-quality and lightweight speech synthesis systems by combining a vocal tract LP filter with a WaveRNN-based vocal source, i.e., excitation, generator.</div>
-<div> However, the quality of synthesized speech is often unstable because the vocal source component is insufficiently represented by the mu-law quantization method, and the model is trained without considering the entire speech production mechanism. </div>
-<div> To address this problem, we first introduce LP-MDN, which enables the autoregressive neural vocoder to structurally represent the interactions between the vocal tract and vocal source components.</div>
-<div> Then, we propose to incorporate the LP-MDN to the LPCNet vocoder by replacing the conventional discretized output with continuous density distribution.</div>
-<div> The experimental results verify that the proposed system provides high quality synthetic speech by achieving 4.41 mean opinion score within a text-to-speech framework.</div>
+<div> This paper investigates how to leverage a DurIAN-based average model to enable a new speaker to have both accurate pronunciation and fluent cross-lingual speaking with very limited monolingual data. </div>
+<div> A weakness of the recently proposed end-to-end text-to-speech (TTS) systems is that robust alignment is hard to achieve, which hinders it to scale well with very limited data.</div>
+<div> To cope with this issue, we introduce AdaDurIAN by training an improved DurIAN-based average model and leverage it to few-shot learning with the shared speaker-independent content encoder across different speakers.</div>
+<div> Several few-shot learning tasks in our experiments show AdaDurIAN can outperform the baseline end-to-end system by a large margin.</div>
+<div> Subjective evaluations also show that AdaDurIAN yields higher mean opinion score (MOS) of naturalness and more preferences of speaker similarity.</div>
+<div> In addition, we also apply AdaDurIAN to emotion transfer tasks and demonstrate its promising performance.</div>
 </blockquote> 
 </div>
 <br/>
