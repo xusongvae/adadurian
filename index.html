@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<!--
+ - File              : index.html
+ - Author            : zewangzhang <zewangzhang@tencent.com>
+ - Date              : 04.06.2020
+ - Last Modified Date: 04.06.2020
+ - Last Modified By  : zewangzhang <zewangzhang@tencent.com>
+-->
 <html>
 <head>
     <meta charset="UTF-8">
@@ -39,11 +47,109 @@
 
 <h3 id="samples">Samples</h3>
 
+<blockquote>
+
+<!-- part1 -->
+
+<h3 style="text-align:left">Performances with different modules to be fixed during 1-minute few-shot speaker adaptation. All audios are converted by Griffin-Lim algorithm from mel spectrogtam.</h3>
+<table class="tg">
+  <tr>
+    <th class="tg-lboi">text</th>
+    <th class="tg-lboi">fix nothing</th>
+    <th class="tg-lboi">fix phone embedding</th>
+    <th class="tg-lboi">fix phone, tone (stress) and language embedding</th>
+    <th class="tg-lboi">fix phone, tone (stress), language embedding and encoder</th>
+  </tr>
+
+  <tr>
+    <td class="tg-lboi">春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。</td>
+
+    <td class="tg-lboi" rowspan="2">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/CMBJX_1.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/CMBJX_2.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/CMBJX_3.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/CMBJX_4.wav">
+		</audio>
+	</td>
+  </tr>
+
+  <tr>
+    <td class="tg-lboi">如今硝烟已散，对于普通旅行者而言，南高加索是一个陌生又熟悉的名词。</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/RJXYYS_1.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/RJXYYS_2.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/RJXYYS_3.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/RJXYYS_4.wav">
+		</audio>
+	</td>
+  </tr>
+
+  <tr>
+    <td class="tg-lboi">The future is scary but you can't just run to the past cause it's familiar.</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/thefuture_1.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/thefuture_2.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/thefuture_3.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="wav/freeze_comparation/thefuture_4.wav">
+		</audio>
+	</td>
+  </tr>
 
 
+</table>
+
+
+
+</blockquote>
 <h3> <br/></h3>
 <hr>
-
-<h3 id="acknowledgements">Acknowledgements</h3>
-
-<p><b>Work performed with nVoice, Clova Voice, Naver Corp.</b></p>
